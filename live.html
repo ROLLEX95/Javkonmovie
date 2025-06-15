@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Live TV - JAVKON</title>
+  <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: white;
+      text-align: center;
+    }
+    h2 {
+      padding: 20px;
+    }
+    #player {
+      width: 100%;
+      height: 80vh;
+    }
+  </style>
+</head>
+<body>
+  <h2>Live TV - JAVKON MOVIE</h2>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({
+      source: "https://example.com/stream.m3u8", // GANTI DENGAN LINK M3U
+      parentId: "#player",
+      autoPlay: true,
+      mute: false
+    });
+  </script>
+</body>
+</html>
