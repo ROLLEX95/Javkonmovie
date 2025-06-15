@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Deposit</title>
   <style>
     body {
       background-color: #1a1a1a;
@@ -55,16 +55,18 @@
   </style>
 </head>
 <body>
-<header>Login</header>
+<header>Deposit</header>
 <main>
 
 <div class="section">
-  <input type="text" placeholder="Username" />
-  <input type="password" placeholder="Password" />
-  <div class="captcha">G H</div>
-  <input type="text" placeholder="Verifikasi" />
-  <button class="btn btn-primary">Masuk</button>
-  <a href="register.html"><button class="btn btn-secondary">Daftar Sekarang</button></a>
+  <h3>Metode Pembayaran</h3>
+  <select>
+    <option>QRIS</option>
+    <option>BNI VA</option>
+    <option>BRI VA</option>
+  </select>
+  <input type="number" placeholder="Jumlah (Rp)" />
+  <button class="btn btn-primary">Lanjutkan Pembayaran</button>
 </div>
 
 </main>
