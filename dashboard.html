@@ -3,79 +3,28 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Dashboard</title>
-  <style>
-    body {
-      background-color: #1a1a1a;
-      color: white;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #000;
-      color: yellow;
-      padding: 15px;
-      text-align: center;
-    }
-    main {
-      padding: 20px;
-    }
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-    }
-    .btn-primary { background-color: #ff5a36; color: white; }
-    .btn-secondary { background-color: #ccc; color: black; }
-    input, select {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border-radius: 5px;
-      border: none;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    nav {
-      background-color: #333;
-      color: white;
-      display: flex;
-      justify-content: space-around;
-      padding: 10px 0;
-      font-size: 14px;
-    }
-    nav div { text-align: center; }
-  </style>
+  <title>Dashboard - Langtian4d</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>User Dashboard</header>
-<main>
+  <nav class="navbar">
+    <h1>Langtian4d</h1>
+    <div class="nav-user">
+      <span id="welcomeMsg">👤</span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </nav>
 
-<div class="section">
-  <h2>User Data</h2>
-  <p>Balance: Rp 0</p>
-  <p>Last Login: 15 Jun 2025</p>
-  <p>IP: 140.xxx.xxx.xxx</p>
-</div>
-<div class="section">
-  <a href="deposit.html"><button class="btn btn-primary">Deposit</button></a>
-  <button class="btn btn-secondary">Withdraw</button>
-</div>
+  <main class="dashboard">
+    <h2>Selamat datang di Dashboard</h2>
+    <p>Saldo Anda: <strong id="saldo">Loading...</strong></p>
+    <div class="actions">
+      <button onclick="deposit()">Deposit</button>
+      <button onclick="withdraw()">Withdraw</button>
+      <button onclick="alert('Fitur Game belum tersedia')">Main Game</button>
+    </div>
+  </main>
 
-</main>
-<nav>
-  <div>🏠<br>Home</div>
-  <div>📢<br>Promo</div>
-  <div>🏆<br>Event</div>
-  <div>💬<br>Chat</div>
-  <div>📲<br>Livechat</div>
-</nav>
+  <script src="js/dashboard.js"></script>
 </body>
 </html>
